@@ -1,446 +1,906 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/all.min.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css.map">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/master.css">
-    <title>E-Tutor</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css.map">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/master.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <title>E-Tutor</title>
 </head>
+
 <body>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js.map"></script>
-    <!-- navigation -->
-    <nav class="navbar navbar-expand-lg nav1">
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Courses</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Become an Instructor</a>
-              </li>
-            <div class="nav-drop">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    USD
-                    </a>
-                    <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                </li>
-                <br>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    English
-                    </a>
-                    <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                </li>
-            </div>
-            </ul>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js.map"></script>
+  <script src="js/fontawesome-free-6.6.0-web/LICENSE.txt"></script>
+  <!-- navigation -->
+  <nav class="navbar navbar-expand-lg nav1">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Courses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Become an Instructor</a>
+          </li>
+          <div class="nav-drop">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                USD
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <br>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                English
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
           </div>
+        </ul>
+      </div>
+    </div>
+    </div>
+  </nav>
+  <div class="nav-rest">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"> <img src="imgs/32px Favicon.png" alt=""> E-tutor</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Browse
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <br>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="What do you want to learn... "
+                aria-label="Search" style="width: 300px; height: fit-content;">
+            </form>
+          </ul>
+          <div class="icons-btns">
+            <div class="icons">
+              <i class="fa fa-regular fa-bell"></i>
+              <i class="fa fa-regular fa-heart"></i>
+              <i class="fa fa-solid fa-cart-shopping"></i>
+            </div>
+            <div class="btns">
+              <button type="button" class="btn btn-outline m-2">Create Account</button>
+              <br><br>
+              <button type="button" class="btn btn-full m-2">Sign In</button>
+            </div>
           </div>
         </div>
-      </nav>
-      <div class="nav-rest">
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#"> <img src="imgs/32px Favicon.png" alt=""> E-tutor</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Browse 
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </li>
-                  <br>
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="What do you want to learn... " aria-label="Search" style="width: 300px; height: fit-content;">
-                </form>
-            </ul>
-            <div class="icons-btns">
-                <div class="icons">
-                    <i class="fa-regular fa-bell"></i>
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-solid fa-cart-shopping"></i>
-                </div>
-                <div class="btns">
-                    <button type="button" class="btn btn-outline m-2">Create Account</button>
-                    <br><br>
-                    <button type="button" class="btn btn-full m-2">Sign In</button>
-                </div>
-            </div>
-            </div>
-            </div>
-          </nav>
+      </div>
+    </nav>
+
     <!--section one-->
     <section class="section-one">
-        <div class="row">
-            <div class="col col-one">
-                <div class="row row-one">
-                    <h1>Learn with expert anytime anywhere</h1>
-                    <br>
-                    <p>Our mission is to help people to find the best course online and learn with expert anytime, anywhere.</p>
-                    <br><br>
-                    <button type="button" class="btn btn-full">Create Account</button>
-                </div>
-            </div>
-            <div class="col col-two">
-                <img src="imgs/Images.png" alt="" style="width: auto; height: 380px;">
-            </div>
+      <div class="row">
+        <div class="col col-one">
+          <div class="row row-one">
+            <h1>Learn with expert anytime anywhere</h1>
+            <br>
+            <p>Our mission is to help people to find the best course online and learn with expert anytime, anywhere.</p>
+            <br><br>
+            <button type="button" class="btn btn-full">Create Account</button>
+          </div>
         </div>
+        <div class="col col-two">
+          <img src="imgs/Images.png" alt="" style="width: auto; height: 380px;">
+        </div>
+      </div>
     </section>
 
     <!--section two-->
     <section class="browse">
-        <h1>browse top category</h1>
-        <br>
-        <div class="labels">
-            <div class="label label1">
-                <div class="icon"><i class="fa-solid fa-microchip"></i></div>
-                <br>
-                <div class="description">
-                    <h6>Label</h6>
-                    <p>67,348 Courses</p>
-                </div>
-            </div>
-            <div class="label label2">
-                <div class="icon"><i class="fa-solid fa-handshake"></i></div>
-                <div class="description">
-                    <h6>Business</h6>
-                    <p>67,348 Courses</p>
-                </div>
-            </div>
-            <div class="label label3">
-                <div class="icon"><i class="fa-solid fa-credit-card"></i></div>
-                <div class="description">
-                    <h6>Finance & Accounting</h6>
-                    <p>67,348 Courses</p>
-                </div>
-            </div>
-            <div class="label label4">
-                <div class="icon"><i class="fa-solid fa-bars-staggered"></i></div>
-                <div class="description">
-                    <h6>IT & Softaware</h6>
-                    <p>67,348 Courses</p>
-                </div>
-            </div>
-            <div class="label label5">
-                <div class="icon"><i class="fa-solid fa-bug"></i></div>
-                <div class="description">
-                    <h6>Personal Development</h6>
-                    <p>67,348 Courses</p>
-                </div>
-            </div>
-            <div class="label label6">
-                <div class="icon"><i class="fa-solid fa-receipt"></i></div>
-                <div class="description">
-                    <h6>Office Productivity</h6>
-                    <p>67,348 Courses</p>
-                </div>
-            </div>
-            <div class="label label7">
-                <div class="icon"><i class="fa-solid fa-bullhorn"></i></div>
-                <div class="description">
-                    <h6>Marketing</h6>
-                    <p>67,348 Courses</p>
-                </div>
-            </div>
-            <div class="label label8">
-                <div class="icon"><i class="fa-solid fa-camera"></i></div>
-                <div class="description">
-                    <h6>Photography & Video</h6>
-                    <p>67,348 Courses</p>
-                </div>
-            </div>
-            <div class="label label9">
-                <div class="icon"><i class="fa-solid fa-box"></i></div>
-                <div class="description">
-                    <h6>Lifestyle</h6>
-                    <p>67,348 Courses</p>
-                </div>
-            </div>
-            <div class="label label10">
-                <div class="icon"><i class="fa-solid fa-pen-nib"></i></div>
-                <div class="description">
-                    <h6>Design</h6>
-                    <p>67,348 Courses</p>
-                </div>
-            </div>
-            <div class="label label11">
-                <div class="icon"><i class="fa-solid fa-briefcase-medical"></i></div>
-                <div class="description">
-                    <h6>Health & Fitness</h6>
-                    <p>67,348 Courses</p>
-                </div>
-            </div>
-            <div class="label label12">
-                <div class="icon"><i class="fa-regular fa-headphones"></i></div>
-                <div class="description">
-                    <h6>Music</h6>
-                    <p>67,348 Courses</p>
-                </div>
-            </div>
-            <p>we have more category & subcategory.   <a href="#"> browse all <i class="fa-solid fa-arrow-right"></i></a></p>
+      <h1>browse top category</h1>
+      <br>
+      <div class="labels">
+        <div class="label label1">
+          <div class="icon"><i class="fa-solid fa-microchip"></i></div>
+          <br>
+          <div class="description">
+            <h6>Label</h6>
+            <p>67,348 Courses</p>
+          </div>
         </div>
+        <div class="label label2">
+          <div class="icon"><i class="fa-solid fa-handshake"></i></div>
+          <div class="description">
+            <h6>Business</h6>
+            <p>67,348 Courses</p>
+          </div>
+        </div>
+        <div class="label label3">
+          <div class="icon"><i class="fa-solid fa-credit-card"></i></div>
+          <div class="description">
+            <h6>Finance & Accounting</h6>
+            <p>67,348 Courses</p>
+          </div>
+        </div>
+        <div class="label label4">
+          <div class="icon"><i class="fa-solid fa-bars-staggered"></i></div>
+          <div class="description">
+            <h6>IT & Softaware</h6>
+            <p>67,348 Courses</p>
+          </div>
+        </div>
+        <div class="label label5">
+          <div class="icon"><i class="fa-solid fa-bug"></i></div>
+          <div class="description">
+            <h6>Personal Development</h6>
+            <p>67,348 Courses</p>
+          </div>
+        </div>
+        <div class="label label6">
+          <div class="icon"><i class="fa-solid fa-receipt"></i></div>
+          <div class="description">
+            <h6>Office Productivity</h6>
+            <p>67,348 Courses</p>
+          </div>
+        </div>
+        <div class="label label7">
+          <div class="icon"><i class="fa-solid fa-bullhorn"></i></div>
+          <div class="description">
+            <h6>Marketing</h6>
+            <p>67,348 Courses</p>
+          </div>
+        </div>
+        <div class="label label8">
+          <div class="icon"><i class="fa-solid fa-camera"></i></div>
+          <div class="description">
+            <h6>Photography & Video</h6>
+            <p>67,348 Courses</p>
+          </div>
+        </div>
+        <div class="label label9">
+          <div class="icon"><i class="fa-solid fa-box"></i></div>
+          <div class="description">
+            <h6>Lifestyle</h6>
+            <p>67,348 Courses</p>
+          </div>
+        </div>
+        <div class="label label10">
+          <div class="icon"><i class="fa-solid fa-pen-nib"></i></div>
+          <div class="description">
+            <h6>Design</h6>
+            <p>67,348 Courses</p>
+          </div>
+        </div>
+        <div class="label label11">
+          <div class="icon"><i class="fa-solid fa-briefcase-medical"></i></div>
+          <div class="description">
+            <h6>Health & Fitness</h6>
+            <p>67,348 Courses</p>
+          </div>
+        </div>
+        <div class="label label12">
+          <div class="icon"><i class="fa-solid fa-headphones"></i></div>
+          <div class="description">
+            <h6>Music</h6>
+            <p>67,348 Courses</p>
+          </div>
+        </div>
+        <p>we have more category & subcategory. <a href="#"> browse all <i class="fa-solid fa-arrow-right"></i></a></p>
+      </div>
     </section>
 
-    <!--section three--> 
+    <!--section three-->
     <section class="best">
-        <h1>best selling courses</h1>
-        <div class="cards">
-            <div class="card" style="width: 14rem;">
-                <img src="imgs/Course Images.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Design</h5>
-                  <p class="card-text">Machine Learning A-Z&trade;: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore itaque quasi magnam, harum temporibus sunt qui pariatur illum totam cum. Sit maiores fugit unde blanditiis laboriosam rerum illo nulla? Iure?</p>
-                </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item"> <i class="fa-solid fa-star">  5.0 </i> 256.7k students</li>
-                </ul>
-              </div>
-              <br>
-              <div class="card carddd" style="width: 14rem;">
-                <img src="imgs/Course Images.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Design</h5>
-                  <p class="card-text">Machine Learning A-Z&trade;: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore itaque quasi magnam, harum temporibus sunt qui pariatur illum totam cum. Sit maiores fugit unde blanditiis laboriosam rerum illo nulla? Iure?</p>
-                </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item"> <i class="fa-solid fa-star">  5.0 </i> 256.7k students</li>
-                </ul>
-              </div>
-              <div class="card carddd" style="width: 14rem;">
-                <img src="imgs/Course Images.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Design</h5>
-                  <p class="card-text">Machine Learning A-Z&trade;: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore itaque quasi magnam, harum temporibus sunt qui pariatur illum totam cum. Sit maiores fugit unde blanditiis laboriosam rerum illo nulla? Iure?</p>
-                </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item"> <i class="fa-solid fa-star">  5.0 </i> 256.7k students</li>
-                </ul>
-              </div>
-              <div class="card carddd" style="width: 14rem;">
-                <img src="imgs/Course Images.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Design</h5>
-                  <p class="card-text">Machine Learning A-Z&trade;: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore itaque quasi magnam, harum temporibus sunt qui pariatur illum totam cum. Sit maiores fugit unde blanditiis laboriosam rerum illo nulla? Iure?</p>
-                </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item"> <i class="fa-solid fa-star">  5.0 </i> 256.7k students</li>
-                </ul>
-              </div>
-              <div class="card carddd" style="width: 14rem;">
-                <img src="imgs/Course Images.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Design</h5>
-                  <p class="card-text">Machine Learning A-Z&trade;: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore itaque quasi magnam, harum temporibus sunt qui pariatur illum totam cum. Sit maiores fugit unde blanditiis laboriosam rerum illo nulla? Iure?</p>
-                </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item"> <i class="fa-solid fa-star">  5.0 </i> 256.7k students</li>
-                </ul>
-              </div>
-              <div class="card carddd" style="width: 14rem;">
-                <img src="imgs/Course Images.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Design</h5>
-                  <p class="card-text">Machine Learning A-Z&trade;: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore itaque quasi magnam, harum temporibus sunt qui pariatur illum totam cum. Sit maiores fugit unde blanditiis laboriosam rerum illo nulla? Iure?</p>
-                </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item"> <i class="fa-solid fa-star">  5.0 </i> 256.7k students</li>
-                </ul>
-              </div>
-              <div class="card carddd" style="width: 14rem;">
-                <img src="imgs/Course Images.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Design</h5>
-                  <p class="card-text">Machine Learning A-Z&trade;: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore itaque quasi magnam, harum temporibus sunt qui pariatur illum totam cum. Sit maiores fugit unde blanditiis laboriosam rerum illo nulla? Iure?</p>
-                </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item"> <i class="fa-solid fa-star">  5.0 </i> 256.7k students</li>
-                </ul>
-              </div>
-              <div class="card carddd" style="width: 14rem;">
-                <img src="imgs/Course Images.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Design</h5>
-                  <p class="card-text">Machine Learning A-Z&trade;: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore itaque quasi magnam, harum temporibus sunt qui pariatur illum totam cum. Sit maiores fugit unde blanditiis laboriosam rerum illo nulla? Iure?</p>
-                </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item"> <i class="fa-solid fa-star">  5.0 </i> 256.7k students</li>
-                </ul>
-              </div>
-              <div class="card carddd" style="width: 14rem;">
-                <img src="imgs/Course Images.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Design</h5>
-                  <p class="card-text">Machine Learning A-Z&trade;: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore itaque quasi magnam, harum temporibus sunt qui pariatur illum totam cum. Sit maiores fugit unde blanditiis laboriosam rerum illo nulla? Iure?</p>
-                </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item"> <i class="fa-solid fa-star">  5.0 </i> 256.7k students</li>
-                </ul>
-              </div>
-              <div class="card carddd" style="width: 14rem;">
-                <img src="imgs/Course Images.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Design</h5>
-                  <p class="card-text">Machine Learning A-Z&trade;: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore itaque quasi magnam, harum temporibus sunt qui pariatur illum totam cum. Sit maiores fugit unde blanditiis laboriosam rerum illo nulla? Iure?</p>
-                </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item"> <i class="fa-solid fa-star">  5.0 </i> 256.7k students</li>
-                </ul>
-              </div>
+      <h1>best selling courses</h1>
+      <div class="cards">
+        <div class="card" style="width: 14rem;">
+          <img src="imgs/Course Images.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <div class="cap">
+              <h6 class="card-title">Design</h6>
+              <p>$57</p>
+            </div>
+            <p class="card-text">Machine Learning A-Z&trade;: Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Dolore itaque quasi magnam, harum temporibus sunt qui pariatur illum totam cum. Sit maiores fugit unde
+              blanditiis laboriosam rerum illo nulla? Iure?</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item" style="font-size: 14px;">
+              <i class="fa-solid fa-star"> 5.0 </i>
+              <b>256.7k</b>Students
+            </li>
+          </ul>
         </div>
+        <br>
+        <div class="card" style="width: 14rem;">
+          <img src="imgs/Course Images.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <div class="cap">
+              <h6 class="card-title">Design</h6>
+              <p>$57</p>
+            </div>
+            <p class="card-text">Machine Learning A-Z&trade;: Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Dolore itaque quasi magnam, harum temporibus sunt qui pariatur illum totam cum. Sit maiores fugit unde
+              blanditiis laboriosam rerum illo nulla? Iure?</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item" style="font-size: 14px;">
+              <i class="fa-solid fa-star"> 5.0 </i>
+              <b>256.7k</b>Students
+            </li>
+          </ul>
+        </div>
+        <br>
+        <div class="card" style="width: 14rem;">
+          <img src="imgs/Course Images.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <div class="cap">
+              <h6 class="card-title">Design</h6>
+              <p>$57</p>
+            </div>
+            <p class="card-text">Machine Learning A-Z&trade;: Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Dolore itaque quasi magnam, harum temporibus sunt qui pariatur illum totam cum. Sit maiores fugit unde
+              blanditiis laboriosam rerum illo nulla? Iure?</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item" style="font-size: 14px;">
+              <i class="fa-solid fa-star"> 5.0 </i>
+              <b>256.7k</b>Students
+            </li>
+          </ul>
+        </div>
+        <br>
+        <div class="card" style="width: 14rem;">
+          <img src="imgs/Course Images.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <div class="cap">
+              <h6 class="card-title">Design</h6>
+              <p>$57</p>
+            </div>
+            <p class="card-text">Machine Learning A-Z&trade;: Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Dolore itaque quasi magnam, harum temporibus sunt qui pariatur illum totam cum. Sit maiores fugit unde
+              blanditiis laboriosam rerum illo nulla? Iure?</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item" style="font-size: 14px;">
+              <i class="fa-solid fa-star"> 5.0 </i>
+              <b>256.7k</b>Students
+            </li>
+          </ul>
+        </div>
+        <br>
+        <div class="card" style="width: 14rem;">
+          <img src="imgs/Course Images.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <div class="cap">
+              <h6 class="card-title">Design</h6>
+              <p>$57</p>
+            </div>
+            <p class="card-text">Machine Learning A-Z&trade;: Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Dolore itaque quasi magnam, harum temporibus sunt qui pariatur illum totam cum. Sit maiores fugit unde
+              blanditiis laboriosam rerum illo nulla? Iure?</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item" style="font-size: 14px;">
+              <i class="fa-solid fa-star"> 5.0 </i>
+              <b>256.7k</b>Students
+            </li>
+          </ul>
+        </div>
+        <br>
+        <div class="card" style="width: 14rem;">
+          <img src="imgs/Course Images.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <div class="cap">
+              <h6 class="card-title">Design</h6>
+              <p>$57</p>
+            </div>
+            <p class="card-text">Machine Learning A-Z&trade;: Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Dolore itaque quasi magnam, harum temporibus sunt qui pariatur illum totam cum. Sit maiores fugit unde
+              blanditiis laboriosam rerum illo nulla? Iure?</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item" style="font-size: 14px;">
+              <i class="fa-solid fa-star"> 5.0 </i>
+              <b>256.7k</b>Students
+            </li>
+          </ul>
+        </div>
+        <br>
+        <div class="card" style="width: 14rem;">
+          <img src="imgs/Course Images.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <div class="cap">
+              <h6 class="card-title">Design</h6>
+              <p>$57</p>
+            </div>
+            <p class="card-text">Machine Learning A-Z&trade;: Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Dolore itaque quasi magnam, harum temporibus sunt qui pariatur illum totam cum. Sit maiores fugit unde
+              blanditiis laboriosam rerum illo nulla? Iure?</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item" style="font-size: 14px;">
+              <i class="fa-solid fa-star"> 5.0 </i>
+              <b>256.7k</b>Students
+            </li>
+          </ul>
+        </div>
+        <br>
+        <div class="card" style="width: 14rem;">
+          <img src="imgs/Course Images.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <div class="cap">
+              <h6 class="card-title">Design</h6>
+              <p>$57</p>
+            </div>
+            <p class="card-text">Machine Learning A-Z&trade;: Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Dolore itaque quasi magnam, harum temporibus sunt qui pariatur illum totam cum. Sit maiores fugit unde
+              blanditiis laboriosam rerum illo nulla? Iure?</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item" style="font-size: 14px;">
+              <i class="fa-solid fa-star"> 5.0 </i>
+              <b>256.7k</b>Students
+            </li>
+          </ul>
+        </div>
+        <br>
+
+      </div>
     </section>
 
     <!--section four-->
     <section class="over">
-        <div class="feat">
-            <div class="feat-txt">
-                <h1>Our feature courses</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt ab officia quo quia voluptate sapiente!</p>
+      <div class="feat">
+        <div class="feat-txt">
+          <h1>Our feature courses</h1>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt ab officia quo quia voluptate sapiente!</p>
+        </div>
+        <div class="lbls">
+          <div class="card mb-3" style="max-width: 600px; max-height: 190px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="imgs/Course Images2.png" class="img-fluid rounded-start" alt="..."
+                  style="width: 168px; height: 190px;">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <div class="card-title">
+                    <h6>health & fitness</h6>
+                    <p>$14.00 <del>$28.00</del></p>
+                  </div>
+                  <h6>Investing in Stock - The Complete Course!</h6>
+                  <div class="card-text">
+                    <p>
+                      <img src="./imgs/16px Favicon.png" alt=""> Kevin Gilbert
+                    </p>
+                    <p>
+                      <i class="fa-solid fa-star" style="color: #fe8e1f;"></i>
+                      <b>5.0</b> (483,914)
+                    </p>
+                  </div>
+                  <div class="card-bar">
+                    <ul>
+                      <li>
+                        <span><i class="fa-regular fa-user" style="color: blue;"></i></span> <b>256.7k</b> Students
+                      </li>
+                      <li>
+                        <span><i class="fa-solid fa-signal" style="color: red;"></i></span> Beginner
+                      </li>
+                      <li>
+                        <span><i class="fa-regular fa-clock" style="color: green;"></i></span> 6 Hours
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="lbls">
-                <div class="card mb-3" style="max-width: 540px;">
-                    <div class="row g-0">
-                      <div class="col-md-4">
-                        <img src="imgs/Course Images2.png" class="img-fluid rounded-start" alt="..." style="width: 168px; height: 176px;">
-                      </div>
-                      <div class="col-md-8">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                          <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                        </div>
-                      </div>
-                    </div>
+          </div>
+          <div class="card mb-3" style="max-width: 600px; max-height: 190px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="imgs/Course Images2.png" class="img-fluid rounded-start" alt="..."
+                  style="width: 168px; height: 190px;">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <div class="card-title">
+                    <h6>health & fitness</h6>
+                    <p>$14.00 <del>$28.00</del></p>
+                  </div>
+                  <h6>Investing in Stock - The Complete Course!</h6>
+                  <div class="card-text">
+                    <p>
+                      <img src="./imgs/16px Favicon.png" alt=""> Kevin Gilbert
+                    </p>
+                    <p>
+                      <i class="fa-solid fa-star" style="color: #fe8e1f;"></i>
+                      <b>5.0</b> (483,914)
+                    </p>
+                  </div>
+                  <div class="card-bar">
+                    <ul>
+                      <li>
+                        <span><i class="fa-regular fa-user" style="color: blue;"></i></span> <b>256.7k</b> Students
+                      </li>
+                      <li>
+                        <span><i class="fa-solid fa-signal" style="color: red;"></i></span> Beginner
+                      </li>
+                      <li>
+                        <span><i class="fa-regular fa-clock" style="color: green;"></i></span> 6 Hours
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-                <div class="card mb-3" style="max-width: 540px;">
-                    <div class="row g-0">
-                      <div class="col-md-4">
-                        <img src="imgs/Course Images2.png" class="img-fluid rounded-start" alt="..." style="width: 168px; height: 176px;">
-                      </div>
-                      <div class="col-md-8">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                          <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                        </div>
-                      </div>
-                    </div>
-                </div>
-                <div class="card mb-3" style="max-width: 540px;">
-                    <div class="row g-0">
-                      <div class="col-md-4">
-                        <img src="imgs/Course Images2.png" class="img-fluid rounded-start" alt="..." style="width: 168px; height: 176px;">
-                      </div>
-                      <div class="col-md-8">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                          <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                        </div>
-                      </div>
-                    </div>
-                </div>
-                <div class="card mb-3" style="max-width: 540px;">
-                    <div class="row g-0">
-                      <div class="col-md-4">
-                        <img src="imgs/Course Images2.png" class="img-fluid rounded-start" alt="..." style="width: 168px; height: 176px;">
-                      </div>
-                      <div class="col-md-8">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                          <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                        </div>
-                      </div>
-                    </div>
-                </div>
+              </div>
             </div>
+          </div>
+          <div class="card mb-3" style="max-width: 600px; max-height: 190px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="imgs/Course Images2.png" class="img-fluid rounded-start" alt="..."
+                  style="width: 168px; height: 190px;">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <div class="card-title">
+                    <h6>health & fitness</h6>
+                    <p>$14.00 <del>$28.00</del></p>
+                  </div>
+                  <h6>Investing in Stock - The Complete Course!</h6>
+                  <div class="card-text">
+                    <p>
+                      <img src="./imgs/16px Favicon.png" alt=""> Kevin Gilbert
+                    </p>
+                    <p>
+                      <i class="fa-solid fa-star" style="color: #fe8e1f;"></i>
+                      <b>5.0</b> (483,914)
+                    </p>
+                  </div>
+                  <div class="card-bar">
+                    <ul>
+                      <li>
+                        <span><i class="fa-regular fa-user" style="color: blue;"></i></span> <b>256.7k</b> Students
+                      </li>
+                      <li>
+                        <span><i class="fa-solid fa-signal" style="color: red;"></i></span> Beginner
+                      </li>
+                      <li>
+                        <span><i class="fa-regular fa-clock" style="color: green;"></i></span> 6 Hours
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3" style="max-width: 600px; max-height: 190px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="imgs/Course Images2.png" class="img-fluid rounded-start" alt="..."
+                  style="width: 168px; height: 190px;">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <div class="card-title">
+                    <h6>health & fitness</h6>
+                    <p>$14.00 <del>$28.00</del></p>
+                  </div>
+                  <h6>Investing in Stock - The Complete Course!</h6>
+                  <div class="card-text">
+                    <p>
+                      <img src="./imgs/16px Favicon.png" alt=""> Kevin Gilbert
+                    </p>
+                    <p>
+                      <i class="fa-solid fa-star" style="color: #fe8e1f;"></i>
+                      <b>5.0</b> (483,914)
+                    </p>
+                  </div>
+                  <div class="card-bar">
+                    <ul>
+                      <li>
+                        <span><i class="fa-regular fa-user" style="color: blue;"></i></span> <b>256.7k</b> Students
+                      </li>
+                      <li>
+                        <span><i class="fa-solid fa-signal" style="color: red;"></i></span> Beginner
+                      </li>
+                      <li>
+                        <span><i class="fa-regular fa-clock" style="color: green;"></i></span> 6 Hours
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
     </section>
 
     <!--section five-->
     <section class="recent">
-        <h1>recently added courses</h1>
-        <br><br>
-        <div class="rec-cards">
-            <div class="card" style="width: 14rem;">
-                <img src="imgs/Course Images.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Design</h5>
-                  <p class="card-text">Machine Learning A-Z&trade;: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore itaque quasi magnam, harum temporibus sunt qui pariatur illum totam cum. Sit maiores fugit unde blanditiis laboriosam rerum illo nulla? Iure?</p>
-                </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item"> <i class="fa-solid fa-star">  5.0 </i> 256.7k students</li>
-                </ul>
-              </div>
-              <div class="card" style="width: 14rem;">
-                <img src="imgs/Course Images.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Design</h5>
-                  <p class="card-text">Machine Learning A-Z&trade;: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore itaque quasi magnam, harum temporibus sunt qui pariatur illum totam cum. Sit maiores fugit unde blanditiis laboriosam rerum illo nulla? Iure?</p>
-                </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item"> <i class="fa-solid fa-star">  5.0 </i> 256.7k students</li>
-                </ul>
-              </div>
-              <div class="card" style="width: 14rem;">
-                <img src="imgs/Course Images.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Design</h5>
-                  <p class="card-text">Machine Learning A-Z&trade;: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore itaque quasi magnam, harum temporibus sunt qui pariatur illum totam cum. Sit maiores fugit unde blanditiis laboriosam rerum illo nulla? Iure?</p>
-                </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item"> <i class="fa-solid fa-star">  5.0 </i> 256.7k students</li>
-                </ul>
-              </div>
-              <div class="card" style="width: 14rem;">
-                <img src="imgs/Course Images.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Design</h5>
-                  <p class="card-text">Machine Learning A-Z&trade;: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore itaque quasi magnam, harum temporibus sunt qui pariatur illum totam cum. Sit maiores fugit unde blanditiis laboriosam rerum illo nulla? Iure?</p>
-                </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item"> <i class="fa-solid fa-star">  5.0 </i> 256.7k students</li>
-                </ul>
-              </div>
-        </div>           
-        <br>
-        <button type="button" class="btn btn-outline m-2">Browse all course <i class="fa-solid fa-arrow-right"></i></button>
-
+      <h1>recently added courses</h1>
+      <br><br>
+      <div class="rec-cards">
+        <div class="card" style="width: 16rem; height: fit-content;">
+          <img src="imgs/Course Images4.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Design</h5>
+            <b>$57</b>
+          </div>
+          <h6 class="card-text">The Python Mega Course: Build 10 Real World Applications.</h6>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"> <span><i class="fa-solid fa-star" style="color: #fe8e1f;"></i> 5.0</span>
+              <p><i class="fa-regular fa-user" style="color: blue;"></i> <b> 256.7k</b> Students</p>
+            </li>
+          </ul>
+        </div>
+        <div class="card" style="width: 16rem; height: fit-content;">
+          <img src="imgs/2.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Design</h5>
+            <b>$57</b>
+          </div>
+          <h6 class="card-text">The Python Mega Course: Build 10 Real World Applications.</h6>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"> <span><i class="fa-solid fa-star" style="color: #fe8e1f;"></i> 5.0</span>
+              <p><i class="fa-regular fa-user" style="color: blue;"></i> <b> 256.7k</b> Students</p>
+            </li>
+          </ul>
+        </div>
+        <div class="card" style="width: 16rem; height: fit-content;">
+          <img src="imgs/3.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Design</h5>
+            <b>$57</b>
+          </div>
+          <h6 class="card-text">The Python Mega Course: Build 10 Real World Applications.</h6>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"> <span><i class="fa-solid fa-star" style="color: #fe8e1f;"></i> 5.0</span>
+              <p><i class="fa-regular fa-user" style="color: blue;"></i> <b> 256.7k</b> Students</p>
+            </li>
+          </ul>
+        </div>
+        <div class="card" style="width: 16rem; height: fit-content;">
+          <img src="imgs/Course Images4.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Design</h5>
+            <b>$57</b>
+          </div>
+          <h6 class="card-text">The Python Mega Course: Build 10 Real World Applications.</h6>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"> <span><i class="fa-solid fa-star" style="color: #fe8e1f;"></i> 5.0</span>
+              <p><i class="fa-regular fa-user" style="color: blue;"></i> <b> 256.7k</b> Students</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <br>
+      <button type="button" class="btn btn-outline m-2">Browse all course <i
+          class="fa-solid fa-arrow-right"></i></button>
     </section>
+
+    <!--section six-->
+    <section class="two-cards ">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 mb-3 card-one">
+            <h1>Become an instructor</h1>
+            <p>Instructors from around the world teach millions <br> of students on Udemy. We provide the tools <br> and
+              skills to
+              teach what you love.</p>
+            <button type="button" class="btn btn-outline ">Start teaching <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+          <div class="col-md-6 card-two">
+            <h1>Your teaching & earning steps</h1>
+            <div class="row">
+              <div class="col-12 col-sm-6">
+                <ul>
+                  <li> <span id="one">1</span>
+                    Apply to become instructor</li>
+                  <br>
+                  <li> <span id="two">2</span>
+                    Build & edit your profile</li>
+                </ul>
+              </div>
+              <div class="col-12 col-sm-6">
+                <ul>
+                  <li> <span id="three">3</span>
+                    Create your new course</li>
+                  <br>
+                  <li> <span id="four">4</span>
+                    Start teaching & earning</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--section seven-->
+    <section class="top">
+      <div class="container">
+        <div class="row row-full">
+          <div class="col">
+            <h1>Top instructors of the month</h1>
+          </div>
+        </div>
+        <div class="row row-cols-5">
+          <div class="col">
+            <div class="top-card pl-4">
+              <div class="card" style="width: 12rem; height: fit-content;">
+                <img src="imgs/4.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Devon Lane</h5>
+                  <p class="job">Senior Developer</p>
+                </div>
+                <div class="rest-top">
+                  <span><i class="fa-solid fa-star" style="color: #fe8e1f;"></i> <b>4.6</b></span>
+                  <p><b>800</b> students</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="top-card">
+              <div class="card" style="width: 12rem; height: fit-content;">
+                <img src="imgs/5.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Kathryn Murphy</h5>
+                  <p class="job">Lead Developer</p>
+                </div>
+                <div class="rest-top">
+                  <span><i class="fa-solid fa-star" style="color: #fe8e1f;"></i> <b>4.2</b></span>
+                  <p><b>2,011</b> students</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="top-card">
+              <div class="card" style="width: 12rem; height: fit-content;">
+                <img src="imgs/6.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Darell Steward</h5>
+                  <p class="job">Product Designer</p>
+                </div>
+                <div class="rest-top">
+                  <span><i class="fa-solid fa-star" style="color: #fe8e1f;"></i> <b>4.9</b></span>
+                  <p><b>451,444</b> students</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="top-card">
+              <div class="card" style="width: 12rem; height: fit-content;">
+                <img src="imgs/7.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Jane Cooper</h5>
+                  <p class="job">UI/UX Designer</p>
+                </div>
+                <div class="rest-top">
+                  <span><i class="fa-solid fa-star" style="color: #fe8e1f;"></i> <b>4.8</b></span>
+                  <p><b>457,284</b> students</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="top-card">
+              <div class="card" style="width: 12rem; height: fit-content;">
+                <img src="imgs/8.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Albert Flores</h5>
+                  <p class="job">Adobe Instructor</p>
+                </div>
+                <div class="rest-top">
+                  <span><i class="fa-solid fa-star" style="color: #fe8e1f;"></i> <b>4.7</b></span>
+                  <p><b>511,123</b> students</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row row-full">
+          <div class="col last">
+            <p>Thousands of students waiting for a instructor. Start teaching & earning now! <a href="#">Browse
+                instructors <i class="fa-solid fa-arrow-right"></i></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--section eight-->
+    <section class="companies">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h1>6.3k Trusted Companies</h1>
+          </div>
+          <div class="col">
+            <div class="col-img"><img src="imgs/net.png" alt=""></div>
+            <div class="col-img"><img src="imgs/you.png" alt=""></div>
+          </div>
+          <div class="col">
+            <div class="col-img"><img src="imgs/goo.png" alt=""></div>
+            <div class="col-img"><img src="imgs/len.png" alt=""></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <p>Nullam egestas tellus at enim ornare tristique. Class aptent taciti sociosqu ad litora torquent per
+              conubia nostra.</p>
+          </div>
+          <div class="col">
+            <div class="col-img"><img src="imgs/sla.png" alt=""></div>
+            <div class="col-img"><img src="imgs/ver.png" alt=""></div>
+          </div>
+          <div class="col">
+            <div class="col-img"><img src="imgs/lex2.png" alt=""></div>
+            <div class="col-img"><img src="imgs/mic.png" alt=""></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--footer-->
+    <footer>
+      <div class="container">
+        <div class="foot-one">
+          <div class="half-one">
+            <h1>Start learning with 67.1k <br> students around the world.</h1>
+            <div class="buttons">
+              <button type="button" class="btn btn-one">Join the Family</button>
+              <button type="button" class="btn btn-two">Browse All Courses</button>
+            </div>
+          </div>
+          <div class="half-two">
+            <div>
+              <h1>6.3k</h1>
+              <p>Online courses</p>
+            </div>
+            <div>
+              <h1>26k</h1>
+              <p>Certified Instructor</p>
+            </div>
+            <div>
+              <h1>99.9%</h1>
+              <p>Success Rate</p>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="foot-two">
+          <div class="row">
+            <div class="col-12 col-md-4">
+              <div class="logo d-flex">
+                <div class="img"><img src="imgs/32px Favicon.png" alt=""></div>
+                <h1>E-tutor</h1>
+              </div>
+              <p>Aliquam rhoncus ligula est, non pulvinar elit <br> convallis nec. Donec mattis
+                odio at.</p>
+              <div class="items d-flex">
+                <div class="ml"><i class="fa-brands fa-facebook-f"></i></div>
+                <div class="ml"><i class="fa-brands fa-instagram"></i></div>
+                <div class="ml"><i class="fa-brands fa-linkedin-in"></i></div>
+                <div class="ml"><i class="fa-brands fa-twitter"></i></div>
+                <div class="ml"><i class="fa-brands fa-youtube"></i></div>
+              </div>
+            </div>
+            <div class="col-8 col-md-2">
+              <h4>Top 4 Category</h4>
+              <a href="">
+                <p>Development</p>
+              </a>
+              <a href="">
+                <p>Finance & Accounting</p>
+              </a>
+              <a href="">
+                <p>Design</p>
+              </a>
+              <a href="">
+                <p>Business</p>
+              </a>
+            </div>
+            <div class="col-6 col-md-2">
+              <h4>Quick links</h4>
+              <a href="" class="links">
+                <p>About</p>
+              </a>
+              <a href="">
+                <p>Become Instructor</p>
+              </a>
+              <a href="">
+                <p>Contact</p>
+              </a>
+              <a href="">
+                <p>Career</p>
+              </a>
+            </div>
+            <div class="col-6 col-md-2">
+              <h4>Support</h4>
+              <a href="">
+                <p>Help Centre</p>
+              </a>
+              <a href="">
+                <p>FAQs</p>
+              </a>
+              <a href="">
+                <p>Terms & Conditions</p>
+              </a>
+              <a href="">
+                <p>Privacy Policy</p>
+              </a>
+            </div>
+            <div class="col-6 col-md-2 down">
+              <h4>Download Our App</h4>
+              <img src="imgs/Download our app.png" alt="">
+              <img src="imgs/Download our app2.png" alt="">
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="foot-three">
+          <p>© 2021 - Eduflex. Designed by Templatecookie. All rights reserved</p>
+          <div class="dropdown">
+            <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"> English
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Arabic</a></li>
+              <li><a class="dropdown-item" href="#">English</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
 </body>
+
 </html>
